@@ -118,7 +118,7 @@ Which communities amplified it
 How it evolved over time
 The output is a visual misinformation timeline that helps users understand the lifecycle of a belief.
 
-Example:
+## Example:
 
 Original Publication
 ↓
@@ -155,7 +155,7 @@ This enables users to quickly evaluate credibility.
 
 Source Transparency Dashboard
 
-Users can inspect:
+## Users can inspect:
 
 Supporting sources
 Contradicting sources
@@ -165,7 +165,7 @@ This promotes trust and transparency.
 
 Interactive Myth Timeline
 
-Visualizes:
+## Visualizes:
 
 Claim origin
 Major amplification events
@@ -173,14 +173,14 @@ Viral spread patterns
 Current status
 Personalized Learning Mode
 
-Users can ask:
+## Users can ask:
 
 Why is this claim false?
 Why do people believe it?
 What evidence supports the opposite view?
 This transforms MythBuster AI from a fact-checker into a learning platform.
 
-Technology Stack
+## Technology Stack
 
 AI and Agents
 
@@ -214,7 +214,7 @@ Mermaid
 Chart.js
 Social Impact
 
-MythBuster AI contributes to:
+## MythBuster AI contributes to:
 
 Digital literacy
 Responsible AI usage
@@ -223,7 +223,7 @@ Reduction of misinformation
 Improved public understanding of science and technology
 The platform empowers users to think critically rather than simply accepting information at face value.
 
-Future Roadmap
+## Future Roadmap
 
 Phase 1:
 
