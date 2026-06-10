@@ -1,0 +1,1 @@
+"""MythBuster AI Backend Application."""
