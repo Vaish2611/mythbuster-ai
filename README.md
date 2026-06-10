@@ -225,22 +225,17 @@ The platform empowers users to think critically rather than simply accepting inf
 
 ## Future Roadmap
 
-Phase 1:
+Phase 1: Health and medical misinformation
 
-Health and medical misinformation
-Phase 2:
+Phase 2: Finance and investment myths
 
-Finance and investment myths
-Phase 3:
+Phase 3: Technology and AI misinformation
 
-Technology and AI misinformation
-Phase 4:
+Phase 4: Educational and career guidance
 
-Educational and career guidance
-Phase 5:
+Phase 5: Global multilingual misinformation monitoring
 
-Global multilingual misinformation monitoring
-Vision
+## Vision
 
 Our vision is to create an AI-powered truth ecosystem that helps individuals navigate the modern information landscape with confidence, transparency, and critical thinking.
 
