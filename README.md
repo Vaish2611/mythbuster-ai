@@ -1,242 +1,546 @@
-# Mythbuster-ai
-MythBuster AI is an intelligent multi-agent platform designed to combat misinformation by not only determining whether a claim is true or false but also explaining why the claim exists, how it spreads, and what evidence supports or contradicts it.
+# 🧱 MythBuster AI
 
-In an era where misinformation spreads faster than verified information, users are often left with fragmented answers, biased opinions, and a lack of trustworthy explanations. Traditional fact-checking systems typically provide binary verdicts such as "True" or "False" without offering transparency into the reasoning process. MythBuster AI addresses this challenge through a network of collaborative AI agents that investigate claims, gather evidence, analyze bias, identify misinformation patterns, and generate human-friendly explanations.
+## Break Myths. Build Truth.
 
-The platform acts as an AI-powered truth investigation system capable of helping students, professionals, researchers, and the general public make informed decisions based on credible information.
+MythBuster AI is an AI-powered misinformation detection and fact verification platform designed to help users evaluate the credibility of claims using evidence-based reasoning and trusted sources.
 
-## Problem Statement
+The platform combines a FastAPI backend with a LEGO-themed Next.js frontend to provide transparent fact verification through:
 
-The internet contains an overwhelming amount of conflicting information related to healthcare, education, finance, technology, public policy, and everyday life. Users frequently encounter claims such as:
+* Evidence-backed verdicts
+* Trust scoring
+* Source reliability analysis
+* Explainable reasoning
+* Source transparency
 
-Vaccines cause autism.
-AI will replace all jobs.
-A master's degree is never worth taking a loan for.
-Drinking alkaline water cures diseases.
-Social media algorithms intentionally suppress certain viewpoints.
-Existing search engines and chatbots often return information without explaining source quality, evidence strength, logical fallacies, or misinformation origins.
+Rather than simply labeling claims as true or false, MythBuster AI helps users understand why a claim is credible or misleading.
 
-## As a result:
+---
 
-Users struggle to evaluate credibility.
-Misinformation spreads rapidly through social media.
-False claims gain traction through repetition and emotional appeal.
-Individuals lack tools to critically assess information.
-MythBuster AI aims to become an intelligent evidence-based reasoning system that helps users understand the complete story behind any claim.
+# 🎯 Problem Statement
 
-## Solution
+The internet is flooded with misinformation.
 
-MythBuster AI leverages a multi-agent architecture built on Azure AI Foundry and Microsoft Agent Framework technologies.
+Users regularly encounter claims such as:
 
-Instead of relying on a single large language model, multiple specialized agents collaborate to investigate a claim from different perspectives.
+* Vaccines cause autism
+* Antibiotics work against viral infections
+* Smoking does not cause cancer
+* F-1 students cannot apply for OPT
+* STEM graduates do not qualify for OPT extensions
 
-Each agent contributes expertise to a specific part of the reasoning process, resulting in more accurate, transparent, and explainable outcomes.
+Traditional search engines provide thousands of results, forcing users to determine which information is trustworthy.
 
-## Agent Architecture
+Most fact-checking tools only provide a verdict without explaining:
 
-Claim Extraction Agent: The Claim Extraction Agent identifies the core factual claim from user input.
+* Why the claim is true or false
+* How reliable the sources are
+* How much evidence supports the verdict
+* How misinformation spreads
+
+MythBuster AI addresses this challenge through transparent, evidence-based verification.
+
+---
+
+# 🚀 Solution
+
+MythBuster AI follows a structured verification workflow:
+
+User Claim
+↓
+Claim Analysis
+↓
+Evidence Retrieval
+↓
+Source Credibility Evaluation
+↓
+Trust Scoring
+↓
+Verdict Generation
+↓
+Transparent Explanation
+
+The platform currently supports:
+
+### 🏥 Healthcare Verification
+
+and
+
+### 🛂 Immigration & Visa Verification
+
+with future expansion planned for additional domains.
+
+---
+
+# ✨ Current Features
+
+## ✅ Claim Verification
+
+Users can enter a claim such as:
+
+> Vaccines cause autism
+
+The system returns:
+
+* Verdict
+* Confidence score
+* Explanation
+* Supporting evidence
+* Source reliability
+* Truth score
+
+---
+
+## ✅ Evidence Retrieval
+
+The system retrieves verified evidence from trusted sources.
+
+Current sources include:
+
+### Healthcare
+
+* CDC
+* WHO
+
+### Immigration
+
+* USCIS
+
+Each source is assigned a credibility score.
 
 Example:
 
-Input:
-"People say taking student loans for a master's degree is never worth it."
+Source: CDC
 
-Extracted Claim:
-"A master's degree financed through student loans is never worth the investment."
+Credibility: 99/100
 
-## Responsibilities:
+---
 
-Remove noise and opinions
-Normalize statements
-Generate structured claims
-Identify sub-claims
-Evidence Discovery Agent
-This agent searches authoritative sources including:
+## ✅ Trust Dashboard
 
-Government databases
-Academic journals
-Peer-reviewed publications
-News organizations
-Public datasets
-Healthcare repositories
+Every claim receives three trust metrics:
+
+### 🧱 Truth Score
+
+Measures how strongly the available evidence supports or contradicts a claim.
+
+### 🔍 Evidence Strength Score
+
+Measures the quality and quantity of evidence available.
+
+### 🏛️ Source Reliability Score
+
+Measures the credibility of the organizations providing evidence.
+
+---
+
+## ✅ Source Transparency
+
+Users can inspect:
+
+* Source Name
+* Supporting Fact
+* Credibility Score
+* Direct Source Link
+
+This allows users to independently verify information.
+
+---
+
+## ✅ Explainable Results
+
+Instead of returning only a verdict, MythBuster AI provides:
+
+* Explanation
+* Supporting evidence
+* Confidence level
+* Source information
+
+making the decision process transparent.
+
+---
+
+## ✅ LEGO-Themed User Interface
+
+The frontend is built around a LEGO-inspired design system featuring:
+
+* LEGO cards
+* LEGO trust dashboard
+* LEGO score blocks
+* LEGO source cards
+* Interactive visual layout
+
+The design emphasizes accessibility and engagement.
+
+---
+
+# 📚 Current Domain Coverage
+
+MythBuster AI currently focuses on two specialized domains.
+
+---
+
+## 🏥 Healthcare Verification
+
+Knowledge base examples:
+
+### Vaccines cause autism
+
+Verdict:
+
+FALSE
+
+Source:
+
+CDC
+
+---
+
+### COVID vaccines are effective
+
+Verdict:
+
+TRUE
+
+Source:
+
+WHO
+
+---
+
+### Antibiotics work against viral infections
+
+Verdict:
+
+FALSE
+
+Source:
+
+WHO
+
+---
+
+### Smoking causes cancer
+
+Verdict:
+
+TRUE
+
+Source:
+
+WHO
+
+---
+
+### High blood pressure is dangerous
+
+Verdict:
+
+TRUE
+
+Source:
+
+WHO
+
+---
+
+## 🛂 Immigration & Visa Verification
+
+Knowledge base examples:
+
+### F-1 students may apply for OPT
+
+Verdict:
+
+TRUE
+
+Source:
+
+USCIS
+
+---
+
+### STEM graduates qualify for a 24-month OPT extension
+
+Verdict:
+
+TRUE
+
+Source:
+
+USCIS
+
+---
+
+### H-1B petitions require filing fees
+
+Verdict:
+
+TRUE
+
+Source:
+
+USCIS
+
+---
+
+### Green card applicants may adjust status within the United States
+
+Verdict:
+
+TRUE
+
+Source:
+
+USCIS
+
+---
+
+# 🏗️ Architecture
+
+## Frontend
+
+Next.js + React
+
 Responsibilities:
 
-Retrieve evidence
-Rank source credibility
-Gather supporting and contradicting information
-Build evidence packages
-Verification Agent
-The Verification Agent evaluates evidence and generates a verdict.
+* User interaction
+* Claim submission
+* Result visualization
+* LEGO trust dashboard
 
-## Possible Outcomes:
+---
 
-True
-Mostly True
-Mixed
-Mostly False
-False
-Insufficient Evidence
-Responsibilities:
+## Backend
 
-## Evaluate evidence quality
-Calculate confidence scores
-Generate reasoning chains
-Explain uncertainty
-Bias and Manipulation Detection Agent
-Many viral claims spread because of cognitive biases rather than evidence.
-
-This agent identifies:
-
-Confirmation bias
-Survivorship bias
-Selection bias
-Emotional framing
-Cherry-picked statistics
-Misleading correlations
-Responsibilities:
-
-Detect manipulation patterns
-Explain persuasive techniques
-Highlight reasoning flaws
-Counter-Perspective Agent
-One of the most important features of MythBuster AI is its ability to generate balanced viewpoints.
-
-## Responsibilities:
-
-Present alternative perspectives
-Explain opposing arguments
-Highlight areas of disagreement
-Reduce echo-chamber effects
-Myth Origin Tracing Agent
-This is the platform's flagship capability.
-
-Instead of simply debunking a myth, the system investigates:
-
-Where the claim originated
-How it spread
-Which communities amplified it
-How it evolved over time
-The output is a visual misinformation timeline that helps users understand the lifecycle of a belief.
-
-## Example:
-
-Original Publication
-↓
-Media Amplification
-↓
-Social Media Spread
-↓
-Public Acceptance
-
-Explainability Agent
-Different users require different levels of explanation.
-
-This agent generates:
-
-30-second summary
-2-minute explanation
-Deep-dive analysis
-Responsibilities:
-
-Simplify complex information
-Adapt explanations to audience expertise
-Improve accessibility
-Key Features
-
-Evidence-Based Truth Score
-
-Every claim receives:
-
-Confidence Score
-Evidence Strength Score
-Source Reliability Score
-Misinformation Risk Score
-This enables users to quickly evaluate credibility.
-
-Source Transparency Dashboard
-
-## Users can inspect:
-
-Supporting sources
-Contradicting sources
-Evidence ranking
-Publication credibility
-This promotes trust and transparency.
-
-Interactive Myth Timeline
-
-## Visualizes:
-
-Claim origin
-Major amplification events
-Viral spread patterns
-Current status
-Personalized Learning Mode
-
-## Users can ask:
-
-Why is this claim false?
-Why do people believe it?
-What evidence supports the opposite view?
-This transforms MythBuster AI from a fact-checker into a learning platform.
-
-## Technology Stack
-
-AI and Agents
-
-Azure AI Foundry
-Azure AI Agents
-Azure OpenAI Service
-Semantic Kernel
-Search and Retrieval
-
-Azure AI Search
-Bing Grounding
-Vector Search
-Backend
-
-Python
 FastAPI
-Azure Functions
-Frontend
 
-Next.js
-React
-TypeScript
-Tailwind CSS
-Database
+Responsibilities:
 
-Azure Cosmos DB
-Visualization
+* Claim processing
+* Knowledge base search
+* Evidence retrieval
+* Score calculation
+* Verdict generation
 
-D3.js
-Mermaid
-Chart.js
-Social Impact
+---
 
-## MythBuster AI contributes to:
+## Knowledge Base
 
-Digital literacy
-Responsible AI usage
-Evidence-based decision making
-Reduction of misinformation
-Improved public understanding of science and technology
-The platform empowers users to think critically rather than simply accepting information at face value.
+Curated repository of verified facts.
 
-## Future Roadmap
+Current domains:
 
-Phase 1: Health and medical misinformation
+* Healthcare
+* Immigration
 
-Phase 2: Finance and investment myths
+Future domains:
 
-Phase 3: Technology and AI misinformation
+* Finance
+* Education
+* Technology
+* Public Policy
 
-Phase 4: Educational and career guidance
+---
 
-Phase 5: Global multilingual misinformation monitoring
+# 🧠 Trust Scoring System
 
-## Vision
+The system calculates:
 
-Our vision is to create an AI-powered truth ecosystem that helps individuals navigate the modern information landscape with confidence, transparency, and critical thinking.
+Truth Score =
+50% Confidence Score +
+30% Evidence Strength +
+20% Source Reliability
 
-Rather than simply answering questions, MythBuster AI teaches users how to evaluate information, understand evidence, and make informed decisions in a world increasingly shaped by AI-generated content and rapidly spreading misinformation.
+This provides a transparent credibility framework.
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+---
+
+## Backend
+
+* FastAPI
+* Python
+* Uvicorn
+
+---
+
+## Data Layer
+
+* Structured Knowledge Base
+* Source Credibility Repository
+
+---
+
+## Future AI Layer
+
+Planned:
+
+* Azure AI Foundry
+* Azure AI Agents
+* Azure OpenAI
+* Semantic Kernel
+* Retrieval-Augmented Generation (RAG)
+
+---
+
+# 📊 Example Workflow
+
+User Input:
+
+> Vaccines cause autism
+
+System Process:
+
+1. Analyze claim
+2. Search knowledge base
+3. Retrieve CDC evidence
+4. Calculate trust scores
+5. Generate verdict
+
+Output:
+
+Verdict: FALSE
+
+Truth Score: 99
+
+Evidence Strength: 99
+
+Source Reliability: 99
+
+Supporting Source:
+
+CDC
+
+---
+
+# 🚧 Features Under Development
+
+The following capabilities are actively being developed.
+
+## Myth Origin Tracing
+
+Investigates:
+
+* Where a myth originated
+* How it spread
+* Major amplification points
+
+Status:
+
+🚧 Work In Progress
+
+---
+
+## Multi-Agent Verification Pipeline
+
+Planned agents:
+
+* Claim Extraction Agent
+* Evidence Retrieval Agent
+* Verification Agent
+* Bias Detection Agent
+* Counter-Perspective Agent
+* Explainability Agent
+
+Status:
+
+🚧 Work In Progress
+
+---
+
+## Bias Detection
+
+Will identify:
+
+* Confirmation bias
+* Emotional framing
+* Cherry-picked statistics
+* Misleading correlations
+
+Status:
+
+🚧 Work In Progress
+
+---
+
+## Counter-Perspective Generation
+
+Will provide:
+
+* Opposing viewpoints
+* Areas of uncertainty
+* Balanced interpretations
+
+Status:
+
+🚧 Work In Progress
+
+---
+
+# 🗺️ Future Roadmap
+
+### Phase 1
+
+Healthcare Verification
+
+✅ Complete
+
+### Phase 2
+
+Immigration Verification
+
+✅ Complete
+
+### Phase 3
+
+LLM-Powered Fact Verification
+
+🚧 In Progress
+
+### Phase 4
+
+Myth Origin Tracing
+
+🚧 In Progress
+
+### Phase 5
+
+Finance & Investment Verification
+
+🔮 Planned
+
+### Phase 6
+
+Technology & AI Misinformation
+
+🔮 Planned
+
+### Phase 7
+
+Educational & Career Guidance Verification
+
+🔮 Planned
+
+### Phase 8
+
+Multilingual Verification Support
+
+🔮 Planned
+
+---
+
+# 🌍 Vision
+
+Our vision is to build an explainable AI-powered truth ecosystem that helps people navigate the modern information landscape through transparent evidence, trusted sources, and critical thinking.
+
+Rather than simply answering whether a claim is true or false, MythBuster AI aims to teach users how to evaluate information, understand evidence, and make informed decisions in a world increasingly shaped by misinformation.
